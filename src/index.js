@@ -14,7 +14,6 @@ function Square(props){
 }
 
 class Board extends React.Component {
-
   renderSquare(i) {
     return ( 
     <Square 
@@ -54,6 +53,7 @@ class Game extends React.Component {
             history: [{
                 squares: Array(9).fill(null),
             }],
+            stepNumber: 0,
             xIsNext: true,
         };
     }
